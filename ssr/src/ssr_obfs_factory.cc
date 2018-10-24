@@ -47,7 +47,7 @@ std::shared_ptr<BaseOBF> OBFsFactory::createOBFContext(std::shared_ptr<Config> c
 	std::shared_ptr<BaseOBF> obf = nullptr;
 
 	if (ot == OBFS_T) {
-		switch (obfs_type){
+		switch (obfs_type) {
 		case ssr_obfs_http_simple:
 		default:
 			break;
@@ -55,7 +55,7 @@ std::shared_ptr<BaseOBF> OBFsFactory::createOBFContext(std::shared_ptr<Config> c
 	
 	}
 	else{
-		switch (protocol_type){
+		switch (protocol_type) {
 
 		// auth_sha1_v4
 		case ssr_protocol_auth_sha1_v4: {
