@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssrxx", "ssrxx\ssrxx.vcxproj", "{AC7F10EB-84AC-4A9C-87A4-79ADC0FB515E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E119B12D-9CC6-4F75-A8B1-E8DF5D303202} = {E119B12D-9CC6-4F75-A8B1-E8DF5D303202}
+		{0C3521B4-9A89-4C88-9F7D-2740B5F59A89} = {0C3521B4-9A89-4C88-9F7D-2740B5F59A89}
+		{E55EDAC6-C1E9-4FB1-A423-EE2199782271} = {E55EDAC6-C1E9-4FB1-A423-EE2199782271}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libuvxx", "libuvxx\libuvxx.vcxproj", "{E55EDAC6-C1E9-4FB1-A423-EE2199782271}"
 EndProject
