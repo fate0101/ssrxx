@@ -1,5 +1,5 @@
 # ssrxx
-C++ implementation，  just be happy
+ShadowSocks-xx  C++ implementation，  just be happy
 
 Development Tools      :   vs2017
 
