@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="uvw">
+      <UniqueIdentifier>{dc2773e1-1b6f-4242-a93a-fee336bf2e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ssr">
+      <UniqueIdentifier>{f8ad1727-1238-4662-8fd5-5ec91a9ab473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd">
+      <UniqueIdentifier>{e0be83a9-86dc-45a5-a720-a2c6e1b3d658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{4c233c17-f2d6-43a4-a5bd-2c498c232fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\obfs">
+      <UniqueIdentifier>{b0f54248-d817-4f22-ad07-6d369ccc897b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RE2">
+      <UniqueIdentifier>{11559f17-3c47-4542-8172-e2a0d5c31184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RE2\src">
+      <UniqueIdentifier>{0111e8f4-1903-4038-ba61-eca2147f3108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RE2\util">
+      <UniqueIdentifier>{b71ff03e-90ee-401b-94f2-10fc8c856764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\cipher">
+      <UniqueIdentifier>{9f867f86-7c54-4a01-b524-3a41d5be1dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encrypt">
+      <UniqueIdentifier>{fd41cee0-adb1-4bb4-8db2-7693758ef8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\util">
+      <UniqueIdentifier>{f70ebfce-83b8-443f-9bee-f9b6ba871985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin">
+      <UniqueIdentifier>{54c2b6aa-2b4e-4ae9-bf4f-b2adb687e7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin\obfs">
+      <UniqueIdentifier>{b4a094da-d0a2-4207-b5a2-04462f52bf31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin\util">
+      <UniqueIdentifier>{14a1cbbc-a220-4db3-84dc-594ad8459fe0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ssrxx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chromium_winlog-master\src\lock.cc">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chromium_winlog-master\src\lock_impl_win.cc">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chromium_winlog-master\src\logging.cc">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chromium_winlog-master\src\stack_trace.cc">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chromium_winlog-master\src\stack_trace_win.cc">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chromium_winlog-master\src\chromium_logging_util.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\re2.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\regexp.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\set.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\simplify.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\stringpiece.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\tostring.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\unicode_casefold.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\unicode_groups.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\bitstate.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\compile.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\dfa.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\filtered_re2.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\mimics_pcre.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\nfa.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\onepass.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\parse.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\perl_groups.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\prefilter.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\prefilter_tree.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\re2\prog.cc">
+      <Filter>RE2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\util\pcre.cc">
+      <Filter>RE2\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\util\rune.cc">
+      <Filter>RE2\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\util\strutil.cc">
+      <Filter>RE2\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\util\test.cc">
+      <Filter>RE2\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\util\benchmark.cc">
+      <Filter>RE2\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\re2-master\util\fuzz.cc">
+      <Filter>RE2\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\cipher\ssr_cipher_names.c">
+      <Filter>3rd\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\encrypt\encrypt_.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\encrypt.cpp">
+      <Filter>3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\cache.c">
+      <Filter>3rd\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\s5.c">
+      <Filter>3rd\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\sockaddr_universal.c">
+      <Filter>3rd\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\ssrbuffer.c">
+      <Filter>3rd\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\encrypt\executive.cpp">
+      <Filter>encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\plugin\util\crc32.cpp">
+      <Filter>plugin\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\plugin\util\obfsutil.cpp">
+      <Filter>plugin\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\base64.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\crc32.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\cstl_lib.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\http_simple.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\obase64.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\obfs.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\obfsutil.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\tls1.2_ticket.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\verify.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\auth.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\3rd\obfs\auth_chain.c">
+      <Filter>3rd\obfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ssr\src\ssr_obfs_factory.cc">
+      <Filter>ssr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\uvw-master\src\uvw.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\fs_event.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\fs_poll.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\handle.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\idle.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\lib.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\loop.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\pipe.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\poll.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\prepare.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\process.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\request.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\resource.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\signal.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\stream.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\tcp.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\thread.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\timer.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\tty.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\udp.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\underlying_type.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\util.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\work.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\async.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\check.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\dns.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\emitter.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\uvw-master\src\uvw\fs.hpp">
+      <Filter>uvw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\base_server.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\base_tunnel.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\local_server.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\socks5_tunnel.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\base_conn.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\socks5_conn.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\noncopyable.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chromium_winlog-master\src\chromium_logging_util.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chromium_winlog-master\src\lock.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chromium_winlog-master\src\lock_impl.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chromium_winlog-master\src\logging.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\chromium_winlog-master\src\stack_trace.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr_common.h">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\re2.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\regexp.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\set.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\stringpiece.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\unicode_casefold.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\unicode_groups.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\walker-inl.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\bitmap256.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\filtered_re2.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\prefilter.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\prefilter_tree.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\re2\prog.h">
+      <Filter>RE2\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\logging.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\mix.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\mutex.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\pcre.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\pod_array.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\sparse_array.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\sparse_set.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\strutil.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\test.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\utf.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\util.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\benchmark.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\re2-master\util\flags.h">
+      <Filter>RE2\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr_buffer.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\cipher\ssr_cipher_names.h">
+      <Filter>3rd\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\encrypt.h">
+      <Filter>3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\encrypt_common.h">
+      <Filter>3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr_config.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\cache.h">
+      <Filter>3rd\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\s5.h">
+      <Filter>3rd\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\sockaddr_universal.h">
+      <Filter>3rd\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\uthash.h">
+      <Filter>3rd\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\ssrbuffer.h">
+      <Filter>3rd\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr_server_cipher.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr_tunnel_cipher.hpp">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\encrypt\encrypt_.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\encrypt\executive.h">
+      <Filter>encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\ssr_obfs.h">
+      <Filter>ssr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\plugin\obfs\ssr_obfs_base.hpp">
+      <Filter>plugin\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\plugin\util\crc32.h">
+      <Filter>plugin\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\plugin\util\obfsutil.h">
+      <Filter>plugin\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\plugin\obfs\ssr_auth_sha1_v4.hpp">
+      <Filter>plugin\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\plugin\obfs\ssr_auth_common.h">
+      <Filter>plugin\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\base64.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\crc32.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\cstl_lib.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\http_simple.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\obfs.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\obfsutil.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\tls1.2_ticket.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\verify.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\auth.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ssr\src\3rd\obfs\auth_chain.h">
+      <Filter>3rd\obfs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\re2-master\re2\make_perl_groups.pl">
+      <Filter>RE2\src</Filter>
+    </None>
+    <None Include="..\re2-master\re2\make_unicode_casefold.py">
+      <Filter>RE2\src</Filter>
+    </None>
+    <None Include="..\re2-master\re2\make_unicode_groups.py">
+      <Filter>RE2\src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
