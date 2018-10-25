@@ -43,6 +43,14 @@ public:
 		clearTunnel();
 	};
 
+	virtual unsigned short Init(std::shared_ptr<Config>&& config) {
+		listen_host_ = config->listen_host;
+	    	listen_port_ = config->listen_port;
+		setConfig(config);
+		loop_ = uvw::Loop::getDefault();
+		return listen();
+	}
+		
 public:
 #ifdef ENABLE_RE_RULES
 	bool setRules(SSRRULE&& rules) {
@@ -70,14 +78,6 @@ public:
 #endif
 
 public:
-	virtual unsigned short Init(std::shared_ptr<Config>&& config) {
-		listen_host_ = config->listen_host;
-	    listen_port_ = config->listen_port;
-		setConfig(config);
-		loop_ = uvw::Loop::getDefault();
-		return listen();
-	}
-
 	void Run() {
 		loop_->run();
 	}
