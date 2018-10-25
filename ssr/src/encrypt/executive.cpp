@@ -46,29 +46,24 @@ std::shared_ptr<SSRBuffer> initial_package_create(const s5_ctx *parser) {
 	return buffer;
 }
 
-
-
 // insert shadowsocks header
 enum ssr_error tunnel_cipher_client_encrypt(std::shared_ptr<SSRBuffer>& buffer, std::shared_ptr<TunnelCipher>& tunnel_cipher) {
 	int err = ssr_ok;
 	assert(buffer->size() >= SSR_BUFF_SIZE);
 
-	// 安全性验证协议
 	if (tunnel_cipher->protecol_ != nullptr) {
 		tunnel_cipher->protecol_->client_pre_encrypt(buffer);
 	}
 
-	// 对称加密(公钥)
 	err = ss_encrypt(buffer, tunnel_cipher, tunnel_cipher->e_ctx_, SSR_BUFF_SIZE);
 	if (err != 0) {
 		return ssr_error_invalid_password;
 	}
 
-	// 混淆 ==> 伪装成 http流
 	if (tunnel_cipher->obfs_ != nullptr) {
 		tunnel_cipher->obfs_->client_encode(buffer);
 	}
-	// SSR end
+	
 	return ssr_ok;
 }
 
