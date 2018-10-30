@@ -102,8 +102,7 @@ public:
 
 		buffer->write(event.data.get(), event.length);
 
-		if (conn == outgoing_)
-		{
+		if (conn == outgoing_) {
 			if (ssr_ok != tunnel_cipher_client_decrypt(buffer, tunnel_cipher_))
 				return;
 
@@ -116,8 +115,7 @@ public:
 
 			outgoing_->handle_->write(buffer->get(), buffer->len());
 		}
-		else
-		{
+		else {
 			abort();
 		}
 	}
