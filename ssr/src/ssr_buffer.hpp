@@ -197,7 +197,7 @@ public:
 		if (nsize < size())
 			return 0;
 
-		// ¶ÔÆë
+		// 
 		size_t rsize = (size_t)ceil(nsize / 1024.0) * 1024;
 
 		char* nbuffer = new char[rsize] {0};
